@@ -22,9 +22,9 @@ $('.TimeSlot').each(function(){
     var myID = $(this).attr('id')
     console.log(myID)
     if(+myID > +currentTime){
-        $(this).addClass('red')
-    } else if (+myID < +currentTime) {
         $(this).addClass('green')
+    } else if (+myID < +currentTime) {
+        $(this).addClass('red')
     } else {
         $(this).addClass('blue')
     }
